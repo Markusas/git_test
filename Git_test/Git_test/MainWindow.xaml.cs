@@ -27,8 +27,12 @@ namespace Git_test
 
         private void executeButton_Click(object sender, RoutedEventArgs e)
         {
-            string name = num1.Text;
-            result.Content = "Hello, " + name;
+            //string name = num1.Text;
+            //result.Content = "Hello, " + name;
+
+            int num = int.Parse(num1.Text);
+            int squareNumber = num * num;
+            result.Content = squareNumber;
         }
     }
 }
